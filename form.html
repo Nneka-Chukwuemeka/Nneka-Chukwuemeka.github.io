@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UFT-8">
+        <title> Forms </title> 
+        <style>
+            html {background:#fff;
+            }
+            body {background-color: white;
+                font-family: sans-serif;
+                font size : 16px;
+                margin: auto;
+            }
+            main
+            {
+                background: #fff;
+                font-family: sans-serif;
+                padding 0.5em 0.5em 0.5em;
+            }
+            .piggy {
+                width:auto;
+                height: 70px;
+                padding: 2em 2em 2em;
+                border-bottom-style:solid;
+                border-bottom-color: azure;
+                position:sticky;
+                top:0;
+                opacity: 100;
+            }
+            img {
+                width: 200px;
+                height: 100px;
+            }
+            div {
+                align-items: center;
+                padding: auto;
+            }
+            h1 {
+                text-align: center;
+                color: blue;
+                font-size: 35px;
+                width: auto;
+                font-style: normal;
+            }
+            h5  {
+                text-align: center;
+                color: dimgrey;
+                width: auto;
+            }
+            .form {
+                width: 33%;
+                height:700px;
+                padding-top: 1em;
+                padding-left: 2em;
+                padding-right: 0.5em;
+                margin: 0 auto;
+                border-style: dashed;
+                border-color: darkslategrey;
+                border-radius: 1em;
+                border-width: thin;
+                box-sizing: border-box;
+            }
+            label {
+                font-size: 20px;
+                color: dimgrey;
+            }
+            input {
+                width: 400px;
+                height: 50px;
+                border-radius: 0.5em;
+                border-width: thin;
+                border-bottom: visible;
+                box-sizing: border-box;
+            }
+            select {
+                width: 400px;
+                height: 50px;
+                border-radius: 0.5em;
+                border-width: thin;
+                border-bottom: visible; 
+                font-size: 20px;
+                font-style: normal;
+                color: dimgrey;
+            }
+            hr{
+                width: thin;
+                align-self: center;
+                border-style: dashed;
+                color: dimgray;
+            }
+            #submit {
+                color: white;
+                background-color: blue;
+                font-size: 20px;
+            }
+            .last {
+                width: 33%;
+                padding-top: 2em;
+                padding-left: 4em;
+                align-content: center;
+                margin: 0 auto;
+                height: 40px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section class="piggy" >
+                <img src="piggy-png_1_.png">
+            </section>
+            <div>
+                <h1> Create a Secure Account </h1>
+                <h5> Welcome to the future of Savings & Investments </h5>
+            s
+            <div class="form">
+                <form action="form.js"> 
+                    <label> First & Last Name (Should Match Your Bank) </label><br>
+                    <input type="text" > <br><br>
+                    <label> Valid Email </label><br>
+                    <input type="email"><br><br>
+                    <label> Phone Number</label><br>
+                    <input type="Phone number"><br><br>
+                    <label> Create your Password </label><br>
+                    <input type="password"> <br><br>
+                    <label>Referrer Phone or Promo Code (Optional) </label><br>
+                    <input type="number" placeholder="Referrer Phone or code"> <br>
+                    <br>
+                    <label id="data"> How Did You Hear About Us? (Optional)</label><br>
+                    <select name="How Did You Hear About Us? (Optional)" >
+                        <option value="Click to select"> Click to select</option>
+                        <option value="Facebook"> Facebook </option>
+                        <option value="Twitter"> Twitter </option>
+                        <option value="Family/Friends/Coworker Referral"> Family/Friends/Coworker Referral</option>
+                        <option value="Google Search"> Google Search</option>
+                        <option value="Google Playstore"> Google Playstore </option>
+                        <option value="Online Blog"> Online Blog </option> 
+                        <option value="Local Newspaper"> Local Newspaper </option>
+                        <option value="At an event"> At an event </option>   
+                        <option value="Others"> Others</option>
+                    </select>
+                    <br>
+                    <br>
+                    <hr>
+                    <input id="submit" type="submit" value="Create a Free Account"><br>
+                </form>
+            
+                </div>
+                <section class="last">
+                    <a href="#" id="link1">Already have an account? Login </a><br>
+                    <h6>By continuing, I agree to PiggyVest's <a href="#">Terms of Use & Privacy.</a></h6>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
